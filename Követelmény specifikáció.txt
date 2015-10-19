@@ -1,6 +1,12 @@
 CGD - Követelmény specifikáció
 
-1. A CGD egy vastagklienses szerver-kliens alkalmazás. A játékosok a kliens használatával csatlakoznak a szerverre.
+1. A CGD egy vastagklienses szerver-kliens alkalmazás Windows platformra, WPF alapokon. A játékosok a kliens használatával csatlakoznak a szerverre.
 2. Az alkalmazásnak használatához regisztráció szükséges
-3. Bejelentkezés után kiválaszthatók az alkalmazásban elérhetõ játékok.
+3. Bejelentkezés után kiválaszthatók az alkalmazásban elérhetõ játékok (egyelõre egy játékot terveztünk).
 4. Az ellenfelek listából választják ki egymást vagy véletlenszerû kiosztás is lehetséges.
+5. Bejelentkezést követõen a fõmenüben található itemek a játékoslista, saját profil gomb, kilépés/kijelentkezés gomb, Választható játékok.
+6. A játékos listában látható adatok: felhasználónév, kiválasztott játék vagy csak bejelentkezve, ha publikus akkor eredménye (addott játéknál)
+7. Kötelezõ, publikus profil adatok: felhasználónév, regisztráció ideje
+8. Opcionális profil adatok: Születési neve, Lakhelye, Eredményei (ezek elrejthetõk)
+9. Esetleges frissítések a kliens alkalmazás elindításával automatikusan települnek.
+10. 
