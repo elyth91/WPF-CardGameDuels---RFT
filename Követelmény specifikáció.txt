@@ -2,4 +2,5 @@ CGD - Követelmény specifikáció
 
 1. A CGD egy vastagklienses szerver-kliens alkalmazás. A játékosok a kliens használatával csatlakoznak a szerverre.
 2. Az alkalmazásnak használatához regisztráció szükséges
-3. Bejelentkezést köve
+3. Bejelentkezés után kiválaszthatók az alkalmazásban elérhetõ játékok.
+4. Az ellenfelek listából választják ki egymást vagy véletlenszerû kiosztás is lehetséges.
