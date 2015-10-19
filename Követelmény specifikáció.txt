@@ -1,0 +1,5 @@
+CGD - Követelmény specifikáció
+
+1. A CGD egy vastagklienses szerver-kliens alkalmazás. A játékosok a kliens használatával csatlakoznak a szerverre.
+2. Az alkalmazásnak használatához regisztráció szükséges
+3. Bejelentkezést köve
