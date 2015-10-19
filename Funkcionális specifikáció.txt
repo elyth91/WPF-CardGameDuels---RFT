@@ -1,0 +1,3 @@
+CGD Funkcionális specifikáció
+
+1 A szerver és a kliens kapcsolata, a bejelentkezés és a játékosok kiválasztása Remote Procedure Controllal történik.
