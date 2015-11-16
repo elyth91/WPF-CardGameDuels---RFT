@@ -14,6 +14,8 @@ namespace CGD_szerver
     {
         public static void start()
         {
+            CGD szerver = new CGD();
+            
             TcpChannel chan = new TcpChannel(8085);
             ChannelServices.RegisterChannel(chan, false);
             RemotingConfiguration.RegisterWellKnownServiceType(
