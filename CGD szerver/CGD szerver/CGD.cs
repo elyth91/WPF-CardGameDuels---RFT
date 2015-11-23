@@ -10,30 +10,43 @@ using CGD_interface;
 
 namespace CGD_szerver
 {
-    public class CGD : MarshalByRefObject, Iserver
+    class peldanyosito : IPeldanyosit
     {
-        public void login(string name, string pass)
+        string peldanytkeszit()
         {
-            logined.Add(new player(name, pass));
+            string id = Guid.NewGuid().ToString();
+            RemotingConfiguration.RegisterWellKnownServiceType(typeof(server), id, WellKnownObjectMode.Singleton);
+            return id;
         }
-        public List<player> get_logined()
-        {
-            return logined;
-        }
-        public CGD()
-        {
-            logined = new List<player>();
-        }
-        List<player> logined;
     }
-    class player
+    class server
     {
-        public string l_name;
-        public string passw;
-        public player(string name, string pass)
+
+    }
+    class user
+    {
+        string _name;
+        string _passwd;
+        int _win;
+        int _loss;
+        public user(string name, string passwd)
         {
-            l_name = name;
-            passw = pass;
+            _name = name;
+            _passwd = passwd;
+            _win = 0;
+            _loss = 0;
+        }
+        public string name
+        {
+            get { return _name; }
+        }
+        public int win
+        {
+            get { return _win; }
+        }
+        public int loss
+        {
+            get { return _loss; }
         }
     }
 }
