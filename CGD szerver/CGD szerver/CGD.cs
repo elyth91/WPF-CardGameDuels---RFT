@@ -12,16 +12,35 @@ namespace CGD_szerver
 {
     class peldanyosito : IPeldanyosit
     {
-        string peldanytkeszit()
+        string IPeldanyosit.peldanytkeszit()
         {
             string id = Guid.NewGuid().ToString();
             RemotingConfiguration.RegisterWellKnownServiceType(typeof(server), id, WellKnownObjectMode.Singleton);
             return id;
         }
     }
-    class server
+    class server : Iserver
     {
+        static List<user> users = new List<user>();
+        public string get_id()
+        {
+            throw new NotImplementedException();
+        }
 
+        public List<string> get_players()
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool login(string name, string pass)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void logout()
+        {
+            throw new NotImplementedException();
+        }
     }
     class user
     {

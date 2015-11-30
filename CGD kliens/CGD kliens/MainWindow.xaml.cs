@@ -33,7 +33,7 @@ namespace CGD_kliens
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            kliens.login()
+            
         }
     }
 }

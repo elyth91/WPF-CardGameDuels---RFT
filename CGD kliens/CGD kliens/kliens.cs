@@ -15,15 +15,7 @@ namespace CGD_kliens
     {
         public static void log_in(string name, string pass)
         {
-            Iserver s = (Iserver)Activator.GetObject(
-                typeof(Iserver),
-                   "tcp://localhost:8085/CGD"
-                );
-            if (s == null) MessageBox.Show("nem sikerült!!");
-            else
-            {
-                
-            }
+            
         }
     }
 }
