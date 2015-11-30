@@ -11,3 +11,5 @@ D:\BéresZ\WPF-CardGameDuels---RFT\CGD szerver\CGD szerver\obj\Debug\CGD_szerver
 D:\BéresZ\WPF-CardGameDuels---RFT\CGD szerver\CGD szerver\obj\Debug\CGD szerver.csproj.GenerateResource.Cache
 D:\BéresZ\WPF-CardGameDuels---RFT\CGD szerver\CGD szerver\obj\Debug\CGD szerver.exe
 D:\BéresZ\WPF-CardGameDuels---RFT\CGD szerver\CGD szerver\obj\Debug\CGD szerver.pdb
+D:\BéresZ\WPF-CardGameDuels---RFT\CGD szerver\CGD szerver\bin\Debug\CGD interface.dll
+D:\BéresZ\WPF-CardGameDuels---RFT\CGD szerver\CGD szerver\bin\Debug\CGD interface.pdb

@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Runtime.Remoting;
+using System.Runtime.Remoting.Channels;
+using System.Runtime.Remoting.Channels.Tcp;
+
 
 namespace CGD_szerver
 {
@@ -28,6 +32,17 @@ namespace CGD_szerver
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            TcpChannel chan = new TcpChannel(8085);
+            ChannelServices.RegisterChannel(chan, false);
+            RemotingConfiguration.RegisterWellKnownServiceType(
+               typeof(peldanyosito),
+               "Peldanyosito",
+               WellKnownObjectMode.Singleton);
+            MessageBox.Show("A szerver elindult!");
         }
     }
 }
