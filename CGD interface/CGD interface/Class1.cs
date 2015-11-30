@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace CGD_interface
 {
-    [Serializable]
-    public class player
+    public interface IPeldanyosit
     {
-        public string l_name;
-        public string passw;
+        string peldanytkeszit();
     }
-
     public interface Iserver
     {
-        void login(string name, string pass);
-        List<player> get_logined();
+        bool login(string name, string pass);
+        void logout();
+        List<string> get_players();
+        string get_id();
     }
+    
 }
