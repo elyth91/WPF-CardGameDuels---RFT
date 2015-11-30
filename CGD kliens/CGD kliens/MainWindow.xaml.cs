@@ -21,9 +21,18 @@ namespace CGD_kliens
     /// </summary>
     public partial class MainWindow : Window
     {
+        Iserver b;
         public MainWindow()
         {
             InitializeComponent();
+            connect();
+        }
+
+        void connect()
+        {
+            IPeldanyosit m = (IPeldanyosit)Activator.GetObject(typeof(IPeldanyosit),"tcp://localhost:8085/Peldanyosito");
+            string id = m.peldanytkeszit();
+            b = (Iserver)Activator.GetObject(typeof(Iserver), "tcp://localhost:8085/" + id);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -33,7 +42,19 @@ namespace CGD_kliens
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            try
+            {
+                if (b.login("Zoli", "almafa"))
+                {
+                    MessageBox.Show("bejelentkezés sikeres!");
+                }
+                else
+                {
+                    MessageBox.Show("sikertelen bejelentkezés!");
+                }
+
+            }
+            catch { MessageBox.Show("Hiba"); }
         }
     }
 }

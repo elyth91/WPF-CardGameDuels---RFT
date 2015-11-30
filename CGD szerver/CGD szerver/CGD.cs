@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
@@ -10,7 +19,7 @@ using CGD_interface;
 
 namespace CGD_szerver
 {
-    class peldanyosito : IPeldanyosit
+    class peldanyosito :  MarshalByRefObject, IPeldanyosit
     {
         string IPeldanyosit.peldanytkeszit()
         {
@@ -19,9 +28,10 @@ namespace CGD_szerver
             return id;
         }
     }
-    class server : Iserver
+    class server : MarshalByRefObject, Iserver
     {
         static List<user> users = new List<user>();
+        public user logged_in = null;
         public string get_id()
         {
             throw new NotImplementedException();
@@ -34,7 +44,11 @@ namespace CGD_szerver
 
         public bool login(string name, string pass)
         {
-            throw new NotImplementedException();
+            user u = new user(name, pass);
+            logged_in = u;
+            users.Add(u);
+            MessageBox.Show(string.Format("{0} Bejelentkezett",name));
+            return true;
         }
 
         public void logout()
