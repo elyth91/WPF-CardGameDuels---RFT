@@ -22,17 +22,24 @@ namespace CGD_szerver
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    [Serializable]
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            server.get_window(this);
+            server.users.Add(new user("Elyth", "salynet"));
+            server.users.Add(new user("Zooli", "salynet"));
+            server.users.Add(new user("Niki", "kiscica"));
+            server.init_users();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+        
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -42,7 +49,7 @@ namespace CGD_szerver
                typeof(peldanyosito),
                "Peldanyosito",
                WellKnownObjectMode.Singleton);
-            MessageBox.Show("A szerver elindult!");
+            log.Items.Add("Szerver elindult");
         }
     }
 }

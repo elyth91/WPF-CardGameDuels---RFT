@@ -13,7 +13,7 @@ namespace CGD_interface
     }
     public interface Iserver
     {
-        bool login(string name, string pass);
+        bool login(string name, string pass, string id);
         void logout();
         List<string> get_players();
         string get_id();

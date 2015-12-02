@@ -22,6 +22,7 @@ namespace CGD_kliens
     public partial class MainWindow : Window
     {
         Iserver b;
+        string id;
         public MainWindow()
         {
             InitializeComponent();
@@ -31,12 +32,13 @@ namespace CGD_kliens
         void connect()
         {
             IPeldanyosit m = (IPeldanyosit)Activator.GetObject(typeof(IPeldanyosit),"tcp://localhost:8085/Peldanyosito");
-            string id = m.peldanytkeszit();
+            id = m.peldanytkeszit();
             b = (Iserver)Activator.GetObject(typeof(Iserver), "tcp://localhost:8085/" + id);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            b.logout();
             this.Close();
         }
 
@@ -44,7 +46,7 @@ namespace CGD_kliens
         {
             try
             {
-                if (b.login("Zoli", "almafa"))
+                if (b.login(l_name.Text, passwd.Password,id))
                 {
                     MessageBox.Show("bejelentkezés sikeres!");
                 }

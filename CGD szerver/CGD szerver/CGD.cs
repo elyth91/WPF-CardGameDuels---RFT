@@ -30,8 +30,23 @@ namespace CGD_szerver
     }
     class server : MarshalByRefObject, Iserver
     {
-        static List<user> users = new List<user>();
+        public static List<user> users = new List<user>();
+        static List<user> logined = new List<user>();
+        static MainWindow main;
         public user logged_in = null;
+        string logged_id = null;
+        public static void init_users()
+        {
+            foreach (user item in users)
+            {
+                main.user_list.Items.Add(item.name);
+            }
+        }
+        public static void get_window(MainWindow main_window)
+        {
+            main = main_window;
+        }
+        
         public string get_id()
         {
             throw new NotImplementedException();
@@ -39,21 +54,54 @@ namespace CGD_szerver
 
         public List<string> get_players()
         {
-            throw new NotImplementedException();
+            List<string> ret = new List<string>();
+            foreach (user item in logined)
+            {
+                ret.Add(item.name);
+            }
+            return ret;
         }
-
-        public bool login(string name, string pass)
+        user find_user(string name)
         {
-            user u = new user(name, pass);
+            user u = null;
+            for (int i = 0; i < users.Count; i++)
+            {
+                if (users[i].name==name)
+                {
+                    u = users[i];
+                }
+            }
+            return u;
+        }
+        public bool login(string name, string pass, string id)
+        {
+            user u = find_user(name);
+            if (u == null)
+            {
+                u = new user(name, pass);
+                users.Add(u);
+            }
+            else
+            {
+                if (!u.valid_password(pass)) return false;
+            }
+            logined.Add(u);
             logged_in = u;
-            users.Add(u);
-            MessageBox.Show(string.Format("{0} Bejelentkezett",name));
+            logged_id = id;
+            lock (main)
+            {
+                main.online.Items.Add(name);
+                main.log.Items.Add(string.Format("{0} bejelentkezett", name));
+            }
             return true;
         }
 
         public void logout()
         {
-            throw new NotImplementedException();
+            main.online.Items.Remove(logged_in.name);
+            main.log.Items.Add(string.Format("{0} kilépett", logged_in.name));
+            logged_in = null;
+            logged_id = null;
         }
     }
     class user
@@ -68,6 +116,11 @@ namespace CGD_szerver
             _passwd = passwd;
             _win = 0;
             _loss = 0;
+        }
+        public bool valid_password(string pass)
+        {
+            if (_passwd == pass) return true;
+            else return false;
         }
         public string name
         {

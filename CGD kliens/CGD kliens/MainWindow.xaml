@@ -3,10 +3,10 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525" WindowStyle="None" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox x:Name="passwd" HorizontalAlignment="Left" Height="23" Margin="169,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="l_name" HorizontalAlignment="Left" Height="23" Margin="169,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button Content="X" HorizontalAlignment="Left" Margin="472,10,0,0" VerticalAlignment="Top" Width="35" Height="35" Click="Button_Click"/>
         <Button Content="Bejelentkezés" HorizontalAlignment="Left" Margin="324,196,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click_1"/>
+        <PasswordBox x:Name="passwd" HorizontalAlignment="Left" Margin="169,198,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
