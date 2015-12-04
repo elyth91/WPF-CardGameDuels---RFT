@@ -40,7 +40,11 @@ namespace CGD_szerver
             this.Close();
         }
         
-
+        public void to_log(string name)
+        {
+            online.Items.Add(name);
+            log.Items.Add(string.Format("{0} bejelentkezett", name));
+        }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             TcpChannel chan = new TcpChannel(8085);

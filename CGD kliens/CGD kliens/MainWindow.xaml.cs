@@ -26,19 +26,28 @@ namespace CGD_kliens
         public MainWindow()
         {
             InitializeComponent();
-            connect();
+            b = null;
+            //connect();
         }
 
         void connect()
         {
-            IPeldanyosit m = (IPeldanyosit)Activator.GetObject(typeof(IPeldanyosit),"tcp://localhost:8085/Peldanyosito");
-            id = m.peldanytkeszit();
-            b = (Iserver)Activator.GetObject(typeof(Iserver), "tcp://localhost:8085/" + id);
+            try
+            {
+                IPeldanyosit m = (IPeldanyosit)Activator.GetObject(typeof(IPeldanyosit), "tcp://localhost:8085/Peldanyosito");
+                id = m.peldanytkeszit();
+                b = (Iserver)Activator.GetObject(typeof(Iserver), "tcp://localhost:8085/" + id);
+            }
+            catch { MessageBox.Show("Nincs kapcsolat a szerverrel"); }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            b.logout();
+            if (b != null)
+            {
+                b.logout();
+            }
+            
             this.Close();
         }
 

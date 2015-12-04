@@ -88,18 +88,20 @@ namespace CGD_szerver
             logined.Add(u);
             logged_in = u;
             logged_id = id;
-            lock (main)
+            try
             {
-                main.online.Items.Add(name);
-                main.log.Items.Add(string.Format("{0} bejelentkezett", name));
+                lock (main)
+                {
+                    main.to_log(u.name);
+                }
+                return true;
             }
-            return true;
+            catch (Exception e) { MessageBox.Show(e.Message); return false; }
+            
         }
 
         public void logout()
         {
-            main.online.Items.Remove(logged_in.name);
-            main.log.Items.Add(string.Format("{0} kilépett", logged_in.name));
             logged_in = null;
             logged_id = null;
         }
