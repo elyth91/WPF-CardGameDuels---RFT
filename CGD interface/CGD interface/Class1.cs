@@ -16,7 +16,11 @@ namespace CGD_interface
         bool login(string name, string pass, string id);
         void logout();
         List<string> get_players();
-        string get_id();
+        string get_id(string name);
     }
-    
+    public interface Ikliens
+    {
+        void refresh_lobby();
+        void game_require();
+    }
 }

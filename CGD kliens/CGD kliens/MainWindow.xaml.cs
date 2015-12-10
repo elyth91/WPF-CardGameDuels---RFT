@@ -27,14 +27,14 @@ namespace CGD_kliens
         {
             InitializeComponent();
             b = null;
-            //connect();
+            connect();
         }
 
         void connect()
         {
             try
             {
-                IPeldanyosit m = (IPeldanyosit)Activator.GetObject(typeof(IPeldanyosit), "tcp://localhost:8085/Peldanyosito");
+                IPeldanyosit m = (IPeldanyosit)Activator.GetObject(typeof(IPeldanyosit), "tcp://localhost:8085/SzerverPeldanyosito");
                 id = m.peldanytkeszit();
                 b = (Iserver)Activator.GetObject(typeof(Iserver), "tcp://localhost:8085/" + id);
             }
@@ -58,6 +58,12 @@ namespace CGD_kliens
                 if (b.login(l_name.Text, passwd.Password,id))
                 {
                     MessageBox.Show("bejelentkezés sikeres!");
+                    Lobby lw = new Lobby(b, id);
+                    this.Visibility = Visibility.Collapsed;
+                    lw.ShowDialog();
+                    this.Visibility = Visibility.Visible;
+                    b.logout();
+                    
                 }
                 else
                 {

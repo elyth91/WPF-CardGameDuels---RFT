@@ -11,11 +11,17 @@ using System.Windows;
 
 namespace CGD_kliens
 {
-    class kliens
+    class kliens : MarshalByRefObject, Ikliens
     {
-        public static void log_in(string name, string pass)
+        public static Lobby l;
+        public void game_require()
         {
-            
+            throw new NotImplementedException();
+        }
+
+        public void refresh_lobby()
+        {
+            l.refresh();
         }
     }
 }

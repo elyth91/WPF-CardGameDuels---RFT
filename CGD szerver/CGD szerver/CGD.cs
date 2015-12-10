@@ -32,25 +32,8 @@ namespace CGD_szerver
     {
         public static List<user> users = new List<user>();
         static List<user> logined = new List<user>();
-        static MainWindow main;
         public user logged_in = null;
-        string logged_id = null;
-        public static void init_users()
-        {
-            foreach (user item in users)
-            {
-                main.user_list.Items.Add(item.name);
-            }
-        }
-        public static void get_window(MainWindow main_window)
-        {
-            main = main_window;
-        }
         
-        public string get_id()
-        {
-            throw new NotImplementedException();
-        }
 
         public List<string> get_players()
         {
@@ -85,25 +68,28 @@ namespace CGD_szerver
             {
                 if (!u.valid_password(pass)) return false;
             }
+            u.id = id;
             logined.Add(u);
             logged_in = u;
-            logged_id = id;
-            try
-            {
-                lock (main)
-                {
-                    main.to_log(u.name);
-                }
-                return true;
-            }
-            catch (Exception e) { MessageBox.Show(e.Message); return false; }
+
+            return true;
             
         }
 
         public void logout()
         {
+            logined.Remove(logged_in);
             logged_in = null;
-            logged_id = null;
+        }
+
+        public string get_id(string name)
+        {
+            int i = 0;
+            while(logined[i].name != name)
+            {
+                i++;
+            }
+            return logined[i].id;
         }
     }
     class user
@@ -112,6 +98,7 @@ namespace CGD_szerver
         string _passwd;
         int _win;
         int _loss;
+        public string id;
         public user(string name, string passwd)
         {
             _name = name;
