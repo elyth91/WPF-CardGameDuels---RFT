@@ -27,7 +27,7 @@ namespace CGD_kliens
         {
             InitializeComponent();
             b = null;
-            connect();
+            //connect();
         }
 
         void connect()
@@ -43,12 +43,15 @@ namespace CGD_kliens
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (b != null)
+            MessageBoxResult r = MessageBox.Show("Biztos kilépsz?", "Kilépés", MessageBoxButton.YesNo);
+            if (r == MessageBoxResult.Yes)
             {
-                b.logout();
+                if (b != null)
+                {
+                    b.logout();
+                }
+                this.Close();
             }
-            
-            this.Close();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)

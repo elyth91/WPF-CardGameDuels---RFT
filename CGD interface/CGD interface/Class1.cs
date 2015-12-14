@@ -17,10 +17,12 @@ namespace CGD_interface
         void logout();
         List<string> get_players();
         string get_id(string name);
+        void set_klient(string name);
+        string offer_game(string name);
     }
     public interface Ikliens
     {
         void refresh_lobby();
-        void game_require();
+        bool game_require(string name, string id);
     }
 }
