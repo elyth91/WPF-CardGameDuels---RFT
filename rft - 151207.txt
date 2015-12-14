@@ -1,0 +1,18 @@
+2015. december 7. RFT
+
+A képek megkapták végleges színeiket és méreteiket.
+Kereteket kaptak.
+Kész a szövegdoboz helye.
+Klónozásuk kész.
+
+Feladatok:
+- szövegdobozok feltöltése a megfelelő gyümölcsök leírásával. (lásd: dok plusz Niki)
+- szövegdobozok formázása
+- ha a szövegek túl nagyok, átírni őket
+
+Kész:
+Niki átírta a szöveget, nyelvhelyesség leellenőrizve.
+Teljesen készek a képek, feltöltésük perceken belül.
+Programbeli használatra alkalmasak.
+
+KB.

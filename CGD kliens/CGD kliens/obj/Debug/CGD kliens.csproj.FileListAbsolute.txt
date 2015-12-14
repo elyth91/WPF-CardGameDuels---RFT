@@ -11,3 +11,26 @@ D:\BéresZ\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD_kliens.Pr
 D:\BéresZ\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens.csproj.GenerateResource.Cache
 D:\BéresZ\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens.exe
 D:\BéresZ\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens.pdb
+D:\BéresZ\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\bin\Debug\CGD interface.dll
+D:\BéresZ\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\bin\Debug\CGD interface.pdb
+D:\BéresZ\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\Window1.baml
+D:\BéresZ\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\Window1.g.cs
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\bin\Debug\CGD kliens.exe.config
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens.exe
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens.pdb
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\bin\Debug\CGD kliens.exe
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\bin\Debug\CGD kliens.pdb
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\bin\Debug\CGD interface.dll
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\bin\Debug\CGD interface.pdb
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens.csprojResolveAssemblyReference.cache
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\MainWindow.baml
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\MainWindow.g.cs
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\App.g.cs
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens_MarkupCompile.cache
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens.g.resources
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD_kliens.Properties.Resources.resources
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens.csproj.GenerateResource.Cache
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\Lobby.baml
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\Lobby.g.cs
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\gamefield.baml
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\gamefield.g.cs
