@@ -22,11 +22,17 @@ namespace CGD_szerver
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    [Serializable]
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            server.users.Add(new user("Elyth", "salynet"));
+            server.users.Add(new user("Zooli", "salynet"));
+            server.users.Add(new user("Niki", "kiscica"));
+            server.users.Add(new user("Barbi", "xroad"));
+            server_run = false;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -34,15 +40,25 @@ namespace CGD_szerver
             this.Close();
         }
 
+        bool server_run;
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            TcpChannel chan = new TcpChannel(8085);
-            ChannelServices.RegisterChannel(chan, false);
-            RemotingConfiguration.RegisterWellKnownServiceType(
-               typeof(peldanyosito),
-               "Peldanyosito",
-               WellKnownObjectMode.Singleton);
-            MessageBox.Show("A szerver elindult!");
+            if (!server_run)
+            {
+                TcpChannel chan = new TcpChannel(8085);
+                ChannelServices.RegisterChannel(chan, false);
+                RemotingConfiguration.RegisterWellKnownServiceType(
+                   typeof(peldanyosito),
+                   "SzerverPeldanyosito",
+                   WellKnownObjectMode.Singleton);
+                server_run = true;
+                MessageBox.Show("A szerver elindult!");
+            }
+            else
+            {
+                MessageBox.Show("A szerver már fut");
+            }
+            
         }
     }
 }

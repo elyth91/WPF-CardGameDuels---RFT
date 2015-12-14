@@ -13,10 +13,16 @@ namespace CGD_interface
     }
     public interface Iserver
     {
-        bool login(string name, string pass);
+        bool login(string name, string pass, string id);
         void logout();
         List<string> get_players();
-        string get_id();
+        string get_id(string name);
+        void set_klient(string name);
+        string offer_game(string name);
     }
-    
+    public interface Ikliens
+    {
+        void refresh_lobby();
+        bool game_require(string name, string id);
+    }
 }
