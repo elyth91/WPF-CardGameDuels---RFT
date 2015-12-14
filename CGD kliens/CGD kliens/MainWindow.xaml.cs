@@ -27,7 +27,7 @@ namespace CGD_kliens
         {
             InitializeComponent();
             b = null;
-            //connect();
+            connect();
         }
 
         void connect()

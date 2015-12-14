@@ -32,3 +32,5 @@ D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD_k
 D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\CGD kliens.csproj.GenerateResource.Cache
 D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\Lobby.baml
 D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\Lobby.g.cs
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\gamefield.baml
+D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\gamefield.g.cs

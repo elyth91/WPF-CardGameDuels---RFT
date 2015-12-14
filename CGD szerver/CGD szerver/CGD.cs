@@ -91,6 +91,17 @@ namespace CGD_szerver
             }
             return logined[i].id;
         }
+
+
+        public string offer_game(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void set_klient(string name)
+        {
+            throw new NotImplementedException();
+        }
     }
     class user
     {
