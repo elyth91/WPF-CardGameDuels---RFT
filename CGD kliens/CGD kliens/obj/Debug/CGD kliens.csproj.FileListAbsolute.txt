@@ -34,3 +34,6 @@ D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\Lobby
 D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\Lobby.g.cs
 D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\gamefield.baml
 D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD kliens\CGD kliens\obj\Debug\gamefield.g.cs
+C:\WPF-CardGameDuels---RFT-master\CGD kliens\CGD kliens\bin\Debug\CGD kliens.exe.config
+C:\WPF-CardGameDuels---RFT-master\CGD kliens\CGD kliens\obj\Debug\CGD kliens.exe
+C:\WPF-CardGameDuels---RFT-master\CGD kliens\CGD kliens\obj\Debug\CGD kliens.pdb
