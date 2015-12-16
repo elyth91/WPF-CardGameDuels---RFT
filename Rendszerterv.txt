@@ -1,5 +1,41 @@
 CGD interface
+Összeköttetés a szerver és a kliens között
+
+Inteface osztályok 
+Iserver
+Ikliens
+Ipéldányosító
+
+    public interface IPeldanyosit
+    {
+        string peldanytkeszit();
+    }
+    public interface Iserver
+    {
+        bool login(string name, string pass, string id);
+        void logout();
+        List<string> get_players();
+        string get_id(string name);
+        void set_klient(string name);
+        string offer_game(string name);
+    }
+    public interface Ikliens
+    {
+        void refresh_lobby();
+        bool game_require(string name, string id);
+    }
 
 CGD kliens
+A felhasználók kezelõfelülete
+Itt történik a bejelentkezés a kihívás és a és maga a játék
+
+MainWindow
+A szerverrel való kapcsolódás
+bejelentkezés ablaka
+
+kliens osztály
+
 
 CGD szerver
+Szerver a kliens alkalmazást szolgálja ki
+Tárolja a feljasználókat és az akív játékosokat
