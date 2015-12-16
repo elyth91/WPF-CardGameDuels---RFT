@@ -48,7 +48,7 @@ namespace CGD_kliens {
         #line hidden
         
         
-        #line 8 "..\..\gamefield.xaml"
+        #line 9 "..\..\gamefield.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Image virágok_jpg;
         
@@ -90,7 +90,7 @@ namespace CGD_kliens {
             return;
             case 2:
             
-            #line 7 "..\..\gamefield.xaml"
+            #line 8 "..\..\gamefield.xaml"
             ((System.Windows.Controls.Button)(target)).Click += new System.Windows.RoutedEventHandler(this.Button_Click_1);
             
             #line default
