@@ -9,5 +9,4 @@
         <PasswordBox x:Name="passwd" HorizontalAlignment="Left" Margin="169,198,0,0" VerticalAlignment="Top" Width="120"/>
         <Image x:Name="virágok_jpg" Margin="378,0,0,0" Source="virágok.jpg" Stretch="Fill"/>
     </Grid>
-    
 </Window>
