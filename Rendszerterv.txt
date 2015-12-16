@@ -1,0 +1,5 @@
+CGD interface
+
+CGD kliens
+
+CGD szerver
