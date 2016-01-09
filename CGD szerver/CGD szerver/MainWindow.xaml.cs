@@ -28,10 +28,10 @@ namespace CGD_szerver
         public MainWindow()
         {
             InitializeComponent();
-            server.users.Add(new user("Elyth", "salynet"));
-            server.users.Add(new user("Zooli", "salynet"));
-            server.users.Add(new user("Niki", "kiscica"));
-            server.users.Add(new user("Barbi", "xroad"));
+            server.users.Add(new user("Elyth", "passwd01"));
+            server.users.Add(new user("Zooli", "passwd01"));
+            server.users.Add(new user("Niki", "jelszó"));
+            server.users.Add(new user("Barbi", "jelszó"));
             server_run = false;
         }
 

@@ -8,3 +8,8 @@ D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD interface\CGD interface\bin\Debug
 D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD interface\CGD interface\obj\Debug\CGD interface.csprojResolveAssemblyReference.cache
 D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD interface\CGD interface\obj\Debug\CGD interface.dll
 D:\EKF-TTK-PTI\rft\WPF-CardGameDuels---RFT\CGD interface\CGD interface\obj\Debug\CGD interface.pdb
+Z:\rft\WPF-CardGameDuels---RFT\CGD interface\CGD interface\bin\Debug\CGD interface.dll
+Z:\rft\WPF-CardGameDuels---RFT\CGD interface\CGD interface\bin\Debug\CGD interface.pdb
+Z:\rft\WPF-CardGameDuels---RFT\CGD interface\CGD interface\obj\Debug\CGD interface.csprojResolveAssemblyReference.cache
+Z:\rft\WPF-CardGameDuels---RFT\CGD interface\CGD interface\obj\Debug\CGD interface.dll
+Z:\rft\WPF-CardGameDuels---RFT\CGD interface\CGD interface\obj\Debug\CGD interface.pdb

@@ -102,6 +102,21 @@ namespace CGD_szerver
         {
             throw new NotImplementedException();
         }
+
+
+        public string get_score(string name)
+        {
+            int i = 0;
+            while (i < users.Count)
+            {
+                if (users[i].name==name)
+                {
+                    return users[i].win.ToString() + "," + users[i].loss.ToString();
+                }
+                i++;
+            }
+            return "";
+        }
     }
     class user
     {

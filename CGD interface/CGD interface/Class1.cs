@@ -19,6 +19,7 @@ namespace CGD_interface
         string get_id(string name);
         void set_klient(string name);
         string offer_game(string name);
+        string get_score(string name);
     }
     public interface Ikliens
     {

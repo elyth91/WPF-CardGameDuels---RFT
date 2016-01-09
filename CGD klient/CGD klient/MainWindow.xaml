@@ -1,0 +1,15 @@
+﻿<Window x:Class="CGD_klient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Background>
+        <ImageBrush ImageSource="TCG.jpg"/>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="l_name" HorizontalAlignment="Left" Height="23" Margin="109,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" Tag="0"/>
+        <Label Content="Felhasználónév" HorizontalAlignment="Left" Margin="109,100,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="SemiBold" Foreground="#FF445FD8"/>
+        <Label Content="Jelszó" HorizontalAlignment="Left" Margin="109,186,0,0" VerticalAlignment="Top" FontSize="36" Foreground="#FF3860CB" FontWeight="Bold"/>
+        <Button Content="Bejelentkezés" HorizontalAlignment="Left" Margin="380,242,0,0" VerticalAlignment="Top" Width="106" Click="Button_Click" Tag="3"/>
+        <PasswordBox x:Name="passwd" HorizontalAlignment="Left" Margin="109,244,0,0" VerticalAlignment="Top" Width="234" Tag="1"/>
+    </Grid>
+</Window>

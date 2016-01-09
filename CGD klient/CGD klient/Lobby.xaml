@@ -1,0 +1,19 @@
+﻿<Window x:Class="CGD_klient.Lobby"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lobby" Height="444" Width="644">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="TCG.jpg"/>
+        </Grid.Background>
+        <ListBox x:Name="player_list" HorizontalAlignment="Left" Height="376" Margin="10,28,0,0" VerticalAlignment="Top" Width="152" Background="{x:Null}" FontSize="20"/>
+        <Label Content="Játékosok" HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" Foreground="Black"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="186,28,0,0" VerticalAlignment="Top" Width="120" Height="120" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="memo.JPG"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="p_name" Content="" HorizontalAlignment="Left" Margin="426,10,0,0" VerticalAlignment="Top" Height="40" Width="200" FontSize="20"/>
+
+    </Grid>
+</Window>
